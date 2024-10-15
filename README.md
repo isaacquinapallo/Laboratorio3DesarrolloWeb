@@ -1,103 +1,65 @@
-// Laboratorio 3
+// Laboratorio 4
 
 // De: Isaac Quinapallo
 
-// VARIABLES
-
-var tiempoRestante = 120 // Variable global que almacena el tiempo restante en segundos
-
-let jugador1 = "FireBoy" // Variable de bloque que representa al primer jugador
-
-let jugador2 = "WaterGirl" // Variable de bloque que representa al segundo jugador
-
-const cantidadGemas = 32 // Constante que define el número total de gemas disponibles
+//Imagen Referencial de Home
+![image](https://github.com/user-attachments/assets/ab592f4f-7d47-4f64-a831-a216b941670a)
 
 
-// STRINGS
+Codigo
+// Laboratorio4_IsaacQuinapallo
+// Página en común: Home de Instagram
+// Ejemplo de Uso de Objetos en Arreglos
+// Perfil de Usuario
+const user = {
+    username: "isaac_quinapallo", //Objetos
+    fullName: "Isaac Quinapallo", //Objetos
+    suggestions: [ //Arreglo que contiene objetos
+      { username: "instagram", type: "Populares" },
+      { username: "joys_pz42", followersInCommon: ["odaliz_balseca", "2 más"] },
+      { username: "steve_04a05", followersInCommon: ["dydan._.mor", "2 más"] },
+      { username: "s___ofiaaa", followersInCommon: ["lenincollahuazo", "1 más"] },
+      { username: "mishu_msc", followersInCommon: ["danny.md15", "2 más"] }
+    ]
+  };
 
-let mensajeVictoria = "¡Felicidades! Has completado el nivel." // Mensaje de victoria al completar el nivel
-
-let instrucciones = "Usa A,W,D para mover a WaterGirl y las flechas para FireBoy." // Instrucciones para los jugadores
-
-
-
-// TEMPLATE STRINGS
-
-console.log(`Tiempo restante: ${tiempoRestante} segundos`) // Muestra el tiempo restante utilizando template strings
-
-console.log(`${jugador1} y ${jugador2} deben colaborar para avanzar.`) // Mensaje de colaboración entre jugadores
-
-
-
-// ES6
-
-let tiempoRestanteStr = "120" // Cadena que representa el tiempo restante
-
-console.log(+tiempoRestanteStr + 30); // Convierte la cadena a número y suma 30
-
-
-
-// Operador Ternario
-
-tiempoRestante <= 0 ? console.log("¡Tiempo agotado!") : console.log("Sigue jugando!"); // Mensaje condicional según el tiempo restante
-
-
-
-// Valores Falsy y Truthy
-
-let jugadorActivo = null; // Variable que puede ser null (falsy)
-
-!jugadorActivo ? console.log("Selecciona un jugador") : console.log("Jugador activo"); // Mensaje dependiendo del valor de jugadorActivo
-
-
-
-// Loops
-
-const niveles = ["Nivel 1", "Nivel 2", "Nivel 3"]; // Array de niveles
-
-niveles.forEach(nivel => { // Itera sobre cada nivel
-
-    console.log(nivel); // Muestra el nombre de cada nivel
-
-});
-
-
-
-// Posibles funciones
-
-function iniciarJuego() {
-
-    console.log("¡El juego ha comenzado!") // Función para iniciar el juego
-
-}
-
-iniciarJuego(); // Llama a la función para comenzar el juego
-
-
-
-const mostrarGemas = function(cantidad) { // Función para mostrar la cantidad de gemas recolectadas
-
-    console.log(`Has recolectado ${cantidad} gemas.`); //Mensaje que muestra la cantidad de gemas
-
-}
-
-mostrarGemas(cantidadGemas); // Llama a la función pasando la cantidad de gemas
-
-
-// Posibles Objetos
-
-const jugador = { // Objeto que representa un jugador
-
-    nombre: "FireBoy", // Nombre del jugador
-    
-    vidas: 3, // Cantidad de vidas del jugador
-   
-    poder: "Fuego", // Poder especial del jugador
-    
-    recolectarGema: function() { // Método para recolectar gemas
-    
-        console.log(`${this.nombre} ha recolectado una Gema!`) // Mensaje que indica la recolección de una gema
-    
+//Publicaciones
+  const posts = [
+    {
+      profilePic: "upper.ec", //Objetos
+      username: "upper.ec", //Objetos
+      timePosted: "4 h", //Objetos
+      likes: 41, //Objetos
+      content: "¡El tamaño NO importa! 📦 Con Upper, puedes traer desde lo más pequeño hasta lo más grande sin preocuparte por un pedido ...", //Objetos
+      comments: [ //Arreglo que contiene Objetos
+        { username: "user1", comment: "¡Me encanta!" },
+        { username: "user2", comment: "Lo voy a probar" }
+      ]
+    },
+    {
+      profilePic: "upper.ec", //Objetos
+      username: "upper.ec", //Objetos
+      timePosted: "5 días", //Objetos
+      likes: 131, //Objetos
+      content: "¡Atención! 🔔 Ahora las notificaciones llegan directo a tu app 📲", //Objetos
+      comments: [ //Arreglo que contiene objetos
+        { username: "user3", comment: "Excelente servicio" }
+      ]
     }
-
-};
+  ];
+  
+//Publicidad
+const ads = [
+    {
+      profilePic: "camaradecomercio927", //Objetos
+      name: "Camara de Comercio Exterior", //Objetos
+      type: "Publicidad", //Objetos
+      likes: 720, //Objetos
+      content: "🎯 ¿Quieres saber cómo invertir en publicidad en redes sociales sin arriesgar tu dinero? Este taller intensivo es para...", //Objetos
+      comments: [ //Arreglo que contiene objetos
+        { username: "user4", comment: "Interesante" },
+        { username: "user5", comment: "Me apunto!" }
+      ]
+    }
+  ];
+  
