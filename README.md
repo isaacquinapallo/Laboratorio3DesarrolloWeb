@@ -1,5 +1,1 @@
-Materia de Desarrollo de Aplicaciones Web
-
-De: Isaac Quinapallo
-
-Bienvenido a mi Repositorio en GitHub
+En este deber se abordo el tema del asincronismo en JavaScript a través de async/await y promesas, centrándose en el consumo de APIs públicas y privadas para obtener detalles de productos de Apple, como el iPhone 16. También se manejo el problema de errores usando try/catch y la manipulación del DOM para mostrar los datos obtenidos en una página web. Además, se toco el tema de autenticación en APIs mediante el uso de tokens, integrando la interacción segura con servicios web.
