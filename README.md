@@ -10,6 +10,11 @@ En este ejemplo, cuando accedemos a la tienda de Apple y realizamos acciones com
 
 ![image](https://github.com/user-attachments/assets/9bf76d6c-1497-437a-bd03-bbfa67ce06cd)
 
+
+//Busque la pagina en la que usted saco los modulos por lo que creo que tengo que hacer el codigo con localstorage...
+![image](https://github.com/user-attachments/assets/02559f3e-3b01-4e3e-8e4f-3443a90e9585)
+
+
 //Laboratorio 06
 
 // Función para guardar la selección del producto en LocalStorage
