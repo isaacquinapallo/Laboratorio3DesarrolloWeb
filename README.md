@@ -9,3 +9,28 @@ Al cambiar ciertos valores en la página de Apple, como seleccionar productos o 
 En este ejemplo, cuando accedemos a la tienda de Apple y realizamos acciones como agregar productos al carrito o personalizar la experiencia de navegación, esta información se guarda en el almacenamiento local mediante objetos JSON que contienen parámetros como "ttl" (tiempo de vida), "items" (productos), y detalles de APIs internas para la actualización de la bolsa de compra en tiempo real. Estas configuraciones se mantienen persistentes hasta que el navegador borra el almacenamiento o hasta que su tiempo de vida expire.
 
 ![image](https://github.com/user-attachments/assets/9bf76d6c-1497-437a-bd03-bbfa67ce06cd)
+
+//Laboratorio 06
+
+// Función para guardar la selección del producto en LocalStorage
+function guardarProductoEnLocalStorage(producto) {
+    localStorage.setItem("productoSeleccionado", producto); // Guarda el producto
+    console.log(`Producto ${producto} guardado en LocalStorage.`); // Confirma en consola
+}
+  
+// Función para obtener el producto almacenado en LocalStorage
+function obtenerProductoDeLocalStorage() {
+    const producto = localStorage.getItem("productoSeleccionado"); // Recupera el producto
+    if (producto) {
+        console.log(`Producto almacenado en LocalStorage: ${producto}`); // Muestra en consola
+        document.getElementById('producto-seleccionado').innerText = `Producto seleccionado: ${producto}`; // Muestra en el DOM
+    } else {
+        console.log("No hay productos guardados en LocalStorage."); // Mensaje si no hay producto
+    }
+}
+  
+// Función para eliminar el producto de LocalStorage
+function eliminarProductoDeLocalStorage() {
+    localStorage.removeItem("productoSeleccionado"); // Elimina el producto
+    console.log("Producto eliminado de LocalStorage."); // Confirma en consola
+}
